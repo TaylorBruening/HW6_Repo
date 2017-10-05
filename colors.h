@@ -24,6 +24,12 @@
 //
 //***********************************************************
 
+/*! 
+	@file colors.h
+	@brief Header file that holds keywords to change colors of terminal text
+	@author Austin Crabtree
+*/
+
 #ifndef COLORS_H
 #define COLORS_H
 

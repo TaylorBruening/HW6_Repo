@@ -151,9 +151,9 @@ int game::eval_with_lookahead(int look_ahead, int beat_this)
 	// The answer we return should be from player's perspective, so multiply times -1:
 	return -best_value;
 }
-/**
-@brief Computer computes all possible moves and picks most valuable
-@return Makes the move
+/*!
+*@brief Computer computes all possible moves and picks most valuable
+*@return Makes the move
 */
 void game::make_computer_move( )
 {
@@ -187,7 +187,11 @@ void game::make_computer_move( )
 	// Make the best move.
 	make_move(best_move);
 }
-
+/*!
+ * Generates the human players move with their  input
+ * @params No paramaters 
+ * @return The players move
+ */
 void game::make_human_move( ) {
 	string move;
 

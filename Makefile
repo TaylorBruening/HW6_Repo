@@ -10,6 +10,9 @@ clean:
 build: main.o game.o othello.o 
 	$(CC) $(COMPILER_FLAGS) -o $(OBJ_NAME) main.o game.o othello.o
 
+doc:
+	doxygen Doxyfile
+
 main.o: main.cc game.h othello.h
 	$(CC) -c main.cc
 

@@ -2,6 +2,11 @@
 // CS2401
 // November 23, 2015
 // Project7
+/**
+@file othello.h
+@brief This is where the othello class and all its functions are declared
+@author Taylor Bruening
+*/
 
 #ifndef OTHELLO_H
 #define OTHELLO_H
@@ -22,6 +27,10 @@ public:
 	void display_status()const;
 	int evaluate()const;
 	bool is_game_over()const;
+	/**
+	@param move a constant string
+	@return returns a bool value of whether move is legal
+	*/
 	bool is_legal(const string& move)const;
 	void make_move(const string& move);
 	void restart();

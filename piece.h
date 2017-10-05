@@ -1,9 +1,7 @@
 /**
 *  @file piece.h
 *  @author Brock Ferrell
-// CS2401
-// November 23, 2015
-// Project7
+*  @breif header file for the piece class
 */
 #ifndef PIECE_H
 #define PIECE_H

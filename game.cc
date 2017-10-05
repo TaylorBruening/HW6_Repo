@@ -151,7 +151,10 @@ int game::eval_with_lookahead(int look_ahead, int beat_this)
 	// The answer we return should be from player's perspective, so multiply times -1:
 	return -best_value;
 }
-
+/**
+@brief Computer computes all possible moves and picks most valuable
+@return Makes the move
+*/
 void game::make_computer_move( )
 {
 	queue<string> moves;

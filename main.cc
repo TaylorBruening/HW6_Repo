@@ -14,7 +14,7 @@
 using namespace main_savitch_14;
 
 /*!
-	@brief 
+	@brief Runs the othello game
 */
 int main()
 {

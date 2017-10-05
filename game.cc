@@ -1,5 +1,9 @@
 // File: game.cxx
-
+/*! 
+	@file game.cc
+	@brief Provides the majority of the game related functions for any projects
+	@author Austin Crabtree
+*/
 #include <cassert>    // Provides assert
 #include <climits>    // Provides INT_MAX and INT_MIN
 #include <iostream>   // Provides cin, cout
@@ -17,6 +21,10 @@ namespace main_savitch_14
 //*************************************************************************
 // PUBLIC MEMBER FUNCTIONS
 
+/*! 
+	@brief The play function runs the game for one round with the human playing first and the computer second
+	@return The return value is who won the game or NEUTRAL for a tie
+*/
 game::who game::play( )
 // The play function should not be overridden. It plays one round of the
 // game, with the human player moving first and the computer second.
@@ -45,11 +53,20 @@ game::who game::play( )
 //*************************************************************************
 // OPTIONAL VIRTUAL FUNCTIONS (overriding these functions is optional)
 
+/*! 
+	@brief Virtual function to display a message
+	@params Message is a string that passed to be displayed
+	@return This function is a void function and doesn't return 
+*/
 void game::display_message(const string& message) const
 {
 	cout << message;
 }
 
+/*! 
+	@brief Virtual function to grab input from the human player 
+	@return Returns a string that contains the move for the human
+*/
 string game::get_user_move( ) const
 {
 	string answer;
@@ -60,6 +77,10 @@ string game::get_user_move( ) const
 	return answer;
 }
 
+/*! 
+	@brief Virtual function to return who won the game
+	@return Returns a Enum says who won the game 
+*/
 game::who game::winning()const {
 
 	int value = evaluate();
@@ -77,6 +98,12 @@ game::who game::winning()const {
 //*************************************************************************
 // PRIVATE FUNCTIONS (these are the same for every game)
 
+/*! 
+	@brief This is a recursive function that runs the majority of the computer AI
+	@params look_ahead is an int that says how deep the function should look
+	@params beat_this is an int that holds a value of another move the function should "beat"
+	@return Returns a best move from the opponets perspective 
+*/
 int game::eval_with_lookahead(int look_ahead, int beat_this)
 // Evaluate a board position with lookahead.
 // --int look_aheads:  How deep the lookahead should go to evaluate the move.

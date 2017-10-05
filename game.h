@@ -1,6 +1,10 @@
 // File: game.h (part of the namespace main_savitch_14)
 
-
+/*! 
+	@file game.h
+	@brief Header file for the game class
+	@author Austin Crabtree
+*/
 #ifndef MAIN_SAVITCH_GAME
 #define MAIN_SAVITCH_GAME
 #include <queue>   // Provides queue<string>

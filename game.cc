@@ -184,7 +184,10 @@ void game::make_computer_move( )
 	// Make the best move.
 	make_move(best_move);
 }
-
+/**
+@brief Gets the move number from the player
+@return Makes the move
+*/
 void game::make_human_move( ) {
 	string move;
 

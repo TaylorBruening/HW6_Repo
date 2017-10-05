@@ -4,9 +4,14 @@
 // Project7
 
 #include "othello.h"
-
+/**
+@file othello.cc
+@brief This file sets up the board and has the functions necessary for making  moves in the game
+@author Taylor Bruening
+*/
 namespace main_savitch_14
 {
+
 
 void Othello::display_status()const
 {
@@ -48,6 +53,10 @@ void Othello::display_status()const
   cout << "\nEnter a move in the format(letter,number) (Ex: A3)" << endl;
 }
 
+/*
+@param move a constant string.
+@return makes a move.
+*/
 void Othello::make_move(const string& move) {
 
   int c, r;

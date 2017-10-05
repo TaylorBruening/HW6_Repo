@@ -188,7 +188,7 @@ void game::make_computer_move( )
 	make_move(best_move);
 }
 /*!
- * Generates the human players move with their  input
+ * @brief Generates the human players move with their  input
  * @params No paramaters 
  * @return The players move
  */

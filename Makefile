@@ -12,6 +12,7 @@ build: main.o game.o othello.o
 
 doc:
 	doxygen Doxyfile
+	rm -r latex/
 
 main.o: main.cc game.h othello.h
 	$(CC) -c main.cc

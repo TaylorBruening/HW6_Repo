@@ -1,8 +1,8 @@
-// Brock Ferrell
-// CS2401
-// November 23, 2015
-// Project7
-
+/**
+*  @file piece.h
+*  @author Brock Ferrell
+*  @breif header file for the piece class
+*/
 #ifndef PIECE_H
 #define PIECE_H
 enum color {black, white, blank};
@@ -11,6 +11,11 @@ class piece {
 public:
 	piece() {theColor = blank;}
 
+	/**
+	*  A member function that changes the color of the piece.
+	*  The color of the piece will be changed to its opposite color.
+	*  @see color
+	*/
 	void flip()
 	{
 		if (theColor == white) {
